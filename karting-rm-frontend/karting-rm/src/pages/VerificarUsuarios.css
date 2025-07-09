@@ -1,0 +1,30 @@
+.cliente-verificacion-container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding-bottom: 2rem;
+}
+
+/* Estilos para el stepper */
+.MuiStepLabel-root .MuiStepLabel-label {
+  font-weight: 500;
+}
+
+.MuiStepLabel-root.MuiStepLabel-active .MuiStepLabel-label {
+  font-weight: 600;
+  color: #1e3c72;
+}
+
+.MuiStepLabel-root.MuiStepLabel-completed .MuiStepLabel-label {
+  color: #4caf50;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .cliente-verificacion-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .MuiStepper-root {
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,336 @@
+.event-rack-container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.event-hero {
+  background: linear-gradient(135deg, #f0f4f8 0%, #0d47a1 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.main-content {
+  padding: 2rem 0;
+}
+
+.reservations-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.reservation-button {
+  border-radius: 20px;
+  text-transform: none;
+  padding: 6px 16px;
+}
+
+.events-table {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.day-header {
+  padding: 8px;
+}
+
+.hour-cell {
+  font-weight: 500;
+  color: #555;
+  border-right: 1px solid #eee;
+}
+
+.event-cell {
+  vertical-align: top;
+  padding: 4px;
+  height: 80px;
+  border-right: 1px solid #eee;
+}
+
+.event-card {
+  margin-bottom: 4px;
+  background-color: #e3f2fd;
+  border-radius: 8px;
+}
+
+.event-card .MuiCardContent-root {
+  padding: 8px;
+}
+
+.event-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.edit-button, .delete-button {
+  padding: 4px;
+}
+
+.reservation-chip {
+  margin-top: 4px;
+  background-color: #bbdefb;
+}
+
+.cta-section {
+  padding: 2rem;
+  background-color: white;
+  background: linear-gradient(135deg, #f0f4f8 0%, #0d47a1 100%);
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cta-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.cta-subtitle {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.contact-button {
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dialog-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-field {
+  margin-top: 8px;
+}
+
+.cancel-button {
+  color: #666;
+}
+
+.submit-button {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.snackbar-alert {
+  border-radius: 8px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.action-button {
+  border-radius: 6px;
+  font-weight: 500;
+  text-transform: none;
+  padding: 8px 16px;
+}
+
+.add-event-button {
+  margin-top: 4px;
+}
+
+/* Vista Mensual */
+.month-view-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.month-grid {
+  margin-top: 8px;
+}
+
+.month-day-header {
+  padding: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.month-day-cell {
+  min-height: 120px;
+}
+
+.month-day-card {
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #eee;
+}
+
+.month-day-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.month-day-card.other-month {
+  background-color: #f9f9f9;
+}
+
+.month-day-card.today {
+  border: 2px solid #1976d2;
+}
+
+.month-day-content {
+  padding: 8px !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.month-day-number {
+  text-align: right;
+  margin-bottom: 4px;
+}
+
+.month-day-number.today-number {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.month-day-events {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.month-event-item {
+  background-color: #e3f2fd;
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.7rem;
+}
+
+.month-event-item:hover {
+  background-color: #bbdefb;
+}
+
+.more-events {
+  color: #666;
+  font-size: 0.7rem;
+  display: block;
+  text-align: center;
+}
+/* Agregar al final de EventRack.css */
+
+/* Estilos para la vista simplificada */
+.simplified-view .event-hero {
+  padding: 2rem 1rem;
+}
+
+.simplified-view .hero-title {
+  font-size: 1.8rem;
+}
+
+.simplified-view .hero-subtitle {
+  font-size: 1rem;
+}
+
+.simplified-view .section-title {
+  font-size: 1.1rem;
+}
+
+.simplified-card {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.simplified-table {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.simplified-table .MuiTableCell-root {
+  border-bottom: none !important;
+}
+
+.simplified-table .event-card {
+  background-color: #f0f4f8 !important;
+}
+
+/* Estilos para el botón de ayuda */
+.help-button {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.help-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Mejoras de accesibilidad */
+[role="button"], button, .event-card, .month-day-card {
+  &:focus {
+    outline: 2px solid #1976d2;
+    outline-offset: 2px;
+  }
+}
+
+/* Mejoras para dispositivos móviles */
+@media (max-width: 768px) {
+  .event-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .main-content {
+    padding: 1rem 0;
+  }
+  
+  .month-day-cell {
+    min-height: 80px !important;
+  }
+  
+  .month-event-item {
+    font-size: 0.6rem !important;
+    padding: 1px 2px !important;
+  }
+  
+  .cta-section {
+    padding: 1rem !important;
+  }
+  
+  .cta-title {
+    font-size: 1.5rem !important;
+  }
+}

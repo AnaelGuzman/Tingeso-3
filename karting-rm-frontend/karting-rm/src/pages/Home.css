@@ -1,0 +1,134 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el body */
+body {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../assets/karting-1666758_1920.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Contenedor principal */
+.container-fluid {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para el logo */
+img {
+    border: 3px solid white;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(223, 230, 235, 0.5);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.home-title {
+    font-size: 4rem;
+    background-color: linear-gradient(90deg, #1e3c72, #aaa);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el texto */
+.container-fluid p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.tarifas-cta {
+    background: rgba(30, 60, 114, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.cta-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.cta-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #eee;
+}
+
+.cta-button-container {
+    margin: 20px 0;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #1e3c72, #2a5298) !important;
+    padding: 12px 30px !important;
+    font-size: 1.1rem !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+    border-radius: 8px !important;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.cta-subtext {
+    font-size: 0.9rem;
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tarifas-cta {
+        padding: 20px;
+        margin: 30px 15px;
+    }
+    
+    .cta-title {
+        font-size: 1.5rem;
+    }
+    
+    .cta-text {
+        font-size: 1rem;
+    }
+}

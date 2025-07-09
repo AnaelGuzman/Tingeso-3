@@ -1,0 +1,82 @@
+.reportes-container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.reportes-hero {
+  background: linear-gradient(135deg, #f0f4f8 0%, #0d47a1 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.main-content {
+  padding: 2rem 0;
+}
+
+.filtros-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.reporte-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+/* Estilos para tablas */
+.MuiTable-root {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.MuiTableHead-root {
+  background-color: #f0f4f8;
+}
+
+.MuiTableCell-head {
+  font-weight: 600 !important;
+}
+
+/* Estilos para chips */
+.MuiChip-root {
+  margin: 0 4px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .reportes-hero {
+    padding: 2rem 1rem;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .main-content {
+    padding: 1rem 0;
+  }
+}
