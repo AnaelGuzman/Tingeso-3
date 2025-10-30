@@ -264,23 +264,28 @@ const Paso2Horario = ({ onNext, onBack, tarifaSeleccionada, initialValues }) => 
     const newErrors = {};
     const selectedDate = formData.fechaReserva ? new Date(formData.fechaReserva) : null;
     const isWeekend = selectedDate ? [0, 6].includes(selectedDate.getDay()) : false;
-    
+
     if (touched.fechaReserva && !formData.fechaReserva) {
       newErrors.fechaReserva = 'La fecha es obligatoria';
     } else if (touched.fechaReserva && formData.fechaReserva) {
       const today = new Date();
       today.setHours(0, 0, 0, 0);
-      
-      if (selectedDate < today) {
+
+      // Parsear correctamente la fecha para que esté en la zona local
+      const [year, month, day] = formData.fechaReserva.split('-').map(Number);
+      const selectedDateOnly = new Date(year, month - 1, day);
+      selectedDateOnly.setHours(0, 0, 0, 0);
+
+      if (selectedDateOnly < today) {
         newErrors.fechaReserva = 'No puedes seleccionar una fecha pasada';
       }
     }
-    
+
     if (touched.horaInicioReserva && !formData.horaInicioReserva) {
       newErrors.horaInicioReserva = 'La hora de inicio es obligatoria';
     } else if (touched.horaInicioReserva && formData.horaInicioReserva && selectedDate) {
       const [horaInicio] = formData.horaInicioReserva.split(':').map(Number);
-      
+
       if (isWeekend) {
         if (horaInicio < 10 || horaInicio >= 22) {
           newErrors.horaInicioReserva = 'Fin de semana: horario debe ser entre 10:00 y 22:00';
@@ -291,9 +296,10 @@ const Paso2Horario = ({ onNext, onBack, tarifaSeleccionada, initialValues }) => 
         }
       }
     }
-    
+
     setErrors(newErrors);
   }, [formData, touched]);
+
 
   const generateTimeOptions = () => {
     if (!formData.fechaReserva || errors.fechaReserva) return [];

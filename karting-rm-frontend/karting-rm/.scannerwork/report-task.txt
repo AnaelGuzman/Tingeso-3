@@ -1,0 +1,6 @@
+projectKey=Frontend-Kart
+serverUrl=http://localhost:9000
+serverVersion=25.7.0.110598
+dashboardUrl=http://localhost:9000/dashboard?id=Frontend-Kart
+ceTaskId=a335713a-8867-4e16-86ee-f3ed77c13b45
+ceTaskUrl=http://localhost:9000/api/ce/task?id=a335713a-8867-4e16-86ee-f3ed77c13b45

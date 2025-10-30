@@ -286,7 +286,7 @@ const VerificarUsuarios = () => {
                     variant="contained"
                     color="primary"
                     endIcon={<ArrowIcon />}
-                    onClick={() => window.location.href = '/reserva'}
+                    onClick={() => window.location.href = '/createReserva1'}
                   >
                     Continuar a reserva
                   </Button>
